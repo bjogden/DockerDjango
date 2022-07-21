@@ -8,6 +8,10 @@ Dockerized:
 ## Why
 Get up to speed quicker with an already Dockerized Django + Postgres app.
 
+## How
+1. `docker-compose up`
+2. Navigate to http://localhost:8000
+
 
 ### Snippets
 In "web" Docker container...
