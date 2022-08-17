@@ -12,7 +12,6 @@ Get up to speed quicker with an already Dockerized Django + Postgres app.
 1. `docker-compose up`
 2. Navigate to http://localhost:8000
 
-
 ### Snippets
 In "web" Docker container...
 - create admin
@@ -23,3 +22,7 @@ In "web" Docker container...
     - `python ../../manage.py startapp sample`
 
 Citation: https://docs.docker.com/samples/django/
+
+## Future
+
+- Add [Django Rest Framework](https://www.django-rest-framework.org/) (if needed)
