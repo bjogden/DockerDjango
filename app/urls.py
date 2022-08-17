@@ -15,6 +15,7 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path, include
+
 # from rest_framework import routers
 
 from app.apps.sample import views as sample_views
@@ -26,8 +27,7 @@ from app.apps.sample import views as sample_views
 
 
 urlpatterns = [
-    path('admin/', admin.site.urls),
-    path('api-auth/', include('rest_framework.urls')),
-
-    path('sample', sample_views.index),
+    path("admin/", admin.site.urls),
+    path("api-auth/", include("rest_framework.urls")),
+    path("sample", sample_views.index),
 ]
