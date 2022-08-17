@@ -28,6 +28,6 @@ from app.apps.sample import views as sample_views
 
 urlpatterns = [
     path("admin/", admin.site.urls),
-    # path("api-auth/", include("rest_framework.urls")),
+    path("api-auth/", include("rest_framework.urls")),
     path("sample", sample_views.index),
 ]
