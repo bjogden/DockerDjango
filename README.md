@@ -22,6 +22,3 @@ In "web" Docker container...
     - `python ../../manage.py startapp sample`
 
 Citation: https://docs.docker.com/samples/django/
-
-## Future
-- Add [Django Rest Framework](https://www.django-rest-framework.org/) (if needed)
