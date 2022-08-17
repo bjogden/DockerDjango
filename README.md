@@ -24,5 +24,4 @@ In "web" Docker container...
 Citation: https://docs.docker.com/samples/django/
 
 ## Future
-
 - Add [Django Rest Framework](https://www.django-rest-framework.org/) (if needed)
