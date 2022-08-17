@@ -162,5 +162,8 @@ cython_debug/
 # VS Code
 settings.json
 
+# PyEnv
+.python-version
+
 # Project-specific
 data/
