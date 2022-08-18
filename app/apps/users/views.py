@@ -6,6 +6,5 @@ from .serializers import UserSerializer
 
 
 class UserViewSet(viewsets.ModelViewSet):
-    queryset = User.objects.all()
-
+    queryset = User.objects.all().order_by("-date_added")
     serializer_class = UserSerializer
