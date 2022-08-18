@@ -2,6 +2,7 @@
 
 STAGED_FILES=$(git diff --name-only --cached | grep ".py$")
 
+# If no files staged, exit
 if [[ "$STAGED_FILES" = "" ]]; then
   exit 0
 fi
