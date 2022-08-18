@@ -11,4 +11,4 @@ echo "Running black..."
 
 docker-compose run --rm web black $STAGED_FILES
 # Add any changes made by black
-git add --update
+git add $STAGED_FILES --update
