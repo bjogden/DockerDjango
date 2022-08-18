@@ -1,14 +1,22 @@
 #!/bin/sh
 
-STAGED_FILES=$(git diff --name-only --cached | grep ".py$")
+STAGED_PY_FILES=$(git diff --name-only --cached | grep ".py$")
 
 # If no files staged, exit
-if [[ "$STAGED_FILES" = "" ]]; then
+if [[ "$STAGED_PY_FILES" = "" ]]; then
   exit 0
 fi
 
-echo "Running black..."
+echo "Running tests..."
+docker-compose run --rm web python manage.py test
 
-docker-compose run --rm web black $STAGED_FILES
+if [ $? != 0 ]; then
+  echo "Error running Python unit tests."
+  exit 1
+fi
+
+echo "Running black..."
+# Run black against staged python files
+docker-compose run --rm web black $STAGED_PY_FILES
 # Add any changes made by black
-git add $STAGED_FILES --update
+git add $STAGED_PY_FILES --update
