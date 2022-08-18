@@ -8,4 +8,6 @@ fi
 
 echo "Running black..."
 
-docker-compose run --rm web black app/
+docker-compose run --rm web black $STAGED_FILES
+# Add any changes made by black
+git add --update
