@@ -25,4 +25,12 @@ In "web" Docker container...
 - run shell with django app loaded
     - `python manage.py shell_plus`
 
+### Pre-commit Setup
+1. `cd DockerDjango`
+2. `cp git-hooks/pre-commit .git/hooks/`
+3. `chmod +x .git/hooks/pre-commit`
+
+...or all as one line:
+`cd Arachnid && cp git-hooks/pre-commit .git/hooks/ && chmod +x .git/hooks/pre-commit`
+
 Citation: https://docs.docker.com/samples/django/
