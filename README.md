@@ -21,4 +21,7 @@ In "web" Docker container...
     - `cd app/apps/`
     - `python ../../manage.py startapp sample`
 
+- run shell with django app loaded
+    - `python manage.py shell_plus`
+
 Citation: https://docs.docker.com/samples/django/
