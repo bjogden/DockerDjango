@@ -31,6 +31,6 @@ In "web" Docker container...
 3. `chmod +x .git/hooks/pre-commit`
 
 ...or all as one line:
-`cd Arachnid && cp git-hooks/pre-commit .git/hooks/ && chmod +x .git/hooks/pre-commit`
+`cd DockerDjango && cp git-hooks/pre-commit .git/hooks/ && chmod +x .git/hooks/pre-commit`
 
 Citation: https://docs.docker.com/samples/django/
